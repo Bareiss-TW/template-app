@@ -1,12 +1,9 @@
 const electron = require('electron');
 const { default: installExtension, REACT_DEVELOPER_TOOLS } = require('electron-devtools-installer');
-const { dialog } = require('electron');
 const session = electron.session;
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 const path = require('path')
-const fs = require('fs');
-const os = require('os');
 const { ipcMain } = require('electron')
 const appRoot = require('electron-root-path').rootPath;
 const isDev = require('electron-is-dev');

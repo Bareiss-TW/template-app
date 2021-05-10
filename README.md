@@ -5,36 +5,26 @@
     <img src="src/assets/img/Bareiss_LOGO.png" alt="Logo" height="28">
   </a>
 
-  <h3 align="center">TechPlan</h3>
+  <h3 align="center">Minimal-React-Electron-App</h3>
 
-  <p align="center">
-    Control Everything with TechPlan now!
 </p>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This software is used for controlling all devices from Bareiss Prüfgerätebau GmbH. It has powerful sequence editor to let user define your own test.
+This tool is for the person who want to play with React and Electron.
 
 
 <!-- LICENSE -->
 ## License
 
-© Copyright: Bareiss Prüfgerätebau GmbH
+© Copyright: Shawn Hsiao
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Bareiss Prüfgerätebau GmbH 
-DAkkS/DKD Laboratorium
-Breiteweg 1
-89610 Oberdischingen
-Germany
-
-Tel.: +49 (0) 7305 / 96 42-0
-Fax: +49 (0) 7305 / 96 42-22
-
-sales@bareiss.de
+Shawn Hsiao
+jungenhsiao@gmail.com
 
