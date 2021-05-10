@@ -32,7 +32,7 @@
       ExecWait '"$0" /C "$EXEDIR\Prerequisites\insertDefault.exe"'
   next1:
   ExpandEnvStrings $0 %COMSPEC%
-  ExecWait '"$0" /C "setx GH_TOKEN 9de363c6c23bd12a9ce5efbc9c76489b2187243c'
+  ExecWait '"$0" /C "setx GH_TOKEN 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'
   
   RMDir /r "$EXEDIR\Prerequisites"
 
