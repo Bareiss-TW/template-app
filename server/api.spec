@@ -1,0 +1,52 @@
+# -*- mode: python ; coding: utf-8 -*-
+
+block_cipher = None
+
+
+a = Analysis(['api.py'],
+             pathex=['C:\\TechPlan\\server','C:\\TechPlan\\server\\corelib',
+             'C:\\TechPlan\\server\\corelib\\hardwarelib\\instrClass',
+             'C:\\TechPlan\\server\\models',
+             'C:\\TechPlan\\server\\testlib',
+             'C:\\TechPlan\\server\\testlib\\seqsItems',
+             'C:\\TechPlan\\server\\statslib',
+             'C:\\TechPlan\\server\\custExceptions'],
+             binaries=[],
+             datas=[],
+             hiddenimports=['pkg_resources.py2_warn',
+              'testlib.seqsItems.seqsItem',
+              'testlib.seqsItems.DigiTest.seqsItem',
+              'testlib.seqsItems.Gelomat.seqsItem',
+              'testlib.seqsItems.HPE.seqsItem',
+              'testlib.seqsItems.RPA.seqsItem',
+              'testlib.seqsItems.Loop.seqsItem',
+              'testlib.seqsItems.Time.seqsItem',
+              'testlib.seqsItems.Dialog.seqsItem',
+              'custExceptions.exceptions'],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=[],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher,
+             noarchive=False)
+pyz = PYZ(a.pure, a.zipped_data,
+             cipher=block_cipher)
+exe = EXE(pyz,
+          a.scripts,
+          [],
+          exclude_binaries=True,
+          name='api',
+          debug=False,
+          bootloader_ignore_signals=False,
+          strip=False,
+          upx=True,
+          console=True )
+coll = COLLECT(exe,
+               a.binaries,
+               a.zipfiles,
+               a.datas,
+               strip=False,
+               upx=True,
+               upx_exclude=[],
+               name='api')
