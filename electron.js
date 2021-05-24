@@ -276,3 +276,12 @@ app.on('activate', () => {
  ipcMain.on('Hello', (event) => {
   ws.send(tools.parseCmd('Hello'));
 })
+ipcMain.on('snap', (event) => {
+  ws.send(tools.parseCmd('snap'));
+})
+ipcMain.on('grab', (event) => {
+  ws.send(tools.parseCmd('grab'));
+})
+ipcMain.on('grabStop', (event) => {
+  ws.send(tools.parseCmd('grabStop'));
+})

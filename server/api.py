@@ -12,9 +12,9 @@ SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.
 os.chdir(SCRIPT_DIR)
 
 class PyServerAPI(object):
-    def __init__(self):
+    def __init__(self, loop):
         self.users = set()
-        self.logic = Logic(self.sendMsg)
+        self.logic = Logic(self.sendMsg,loop)
 
     async def register(self,websocket):
         self.users.add(websocket)
@@ -58,7 +58,8 @@ class PyServerAPI(object):
 
 def main():
     try:
-        sokObj = PyServerAPI()
+        loop = asyncio.get_event_loop()
+        sokObj = PyServerAPI(loop)
         port=6849
         addr = 'tcp://127.0.0.1:{}'.format(port)
         print('start running on {}'.format(addr))

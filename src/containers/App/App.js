@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import VisionPanel from '../../components/VisionPanel/VisionPanel';
+
 import classes from './App.module.css';
 
 const electron = window.require('electron');
@@ -24,7 +26,10 @@ const App = props => {
     }
   }, [onReplyMsg])
 
-  return <h1>{msg}</h1>;
+  return <div>
+    <h1>{msg}</h1>
+    <VisionPanel />
+  </div>;
 }
 
 export default App;
