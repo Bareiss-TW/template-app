@@ -26,8 +26,7 @@ const App = props => {
     }
   }, [onReplyMsg])
 
-  return <div>
-    <h1>{msg}</h1>
+  return <div className={classes.Background}>
     <VisionPanel />
   </div>;
 }

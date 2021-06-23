@@ -7,6 +7,7 @@ import asyncio
 import websockets
 import json
 from logic import Logic
+from cam import Camera
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
 os.chdir(SCRIPT_DIR)

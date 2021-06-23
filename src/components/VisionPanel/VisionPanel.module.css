@@ -24,15 +24,49 @@
     padding: 10px;
 }
 
-.ImageContainer {
+.drawContainer {
     flex: 1;
     width: 100%;
     padding: 20px 0 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    border: 1px solid rgb(107, 107, 107);
 }
-.ImageContainer img{
+.drawContainer img{
     max-width: 90%;
     max-height: 90%;
+}
+.drawContainer > .imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    z-index: 1;
+}
+.drawContainer > .roiContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    z-index: 2;
+}
+.imgCropContainer{
+    position: absolute;
+    top: 0;
+    left: 801px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.shpaeButtons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 30px;
 }
