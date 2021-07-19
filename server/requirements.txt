@@ -1,3 +1,2 @@
 PyInstaller
 websockets
-opencv-python
