@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import VisionPanel from '../../components/VisionPanel/VisionPanel';
 
 import classes from './App.module.css';
 
@@ -27,7 +26,7 @@ const App = props => {
   }, [onReplyMsg])
 
   return <div className={classes.Background}>
-    <VisionPanel />
+    hi
   </div>;
 }
 
